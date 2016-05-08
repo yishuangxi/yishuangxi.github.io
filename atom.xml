@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yishuangxi.github.io/"/>
-  <updated>2016-05-08T04:52:18.576Z</updated>
+  <updated>2016-05-08T07:56:37.727Z</updated>
   <id>http://yishuangxi.github.io/</id>
   
   <author>
@@ -20,12 +20,17 @@
     <link href="http://yishuangxi.github.io/2016/05/08/hexo/"/>
     <id>http://yishuangxi.github.io/2016/05/08/hexo/</id>
     <published>2016-05-08T04:37:05.338Z</published>
-    <updated>2016-05-08T04:52:18.576Z</updated>
+    <updated>2016-05-08T07:56:37.727Z</updated>
     
     <content type="html">&lt;h3 id=&quot;配置deploy&quot;&gt;&lt;a href=&quot;#配置deploy&quot; class=&quot;headerlink&quot; title=&quot;配置deploy&quot;&gt;&lt;/a&gt;配置deploy&lt;/h3&gt;&lt;p&gt;在_config.xml文件中添加如下配置，注意冒号后面要有空格：&lt;br&gt;&lt;figure class=&quot;highlight bash&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;deploy:&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;  &lt;span class=&quot;built_in&quot;&gt;type&lt;/span&gt;: git&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;  repo: https://github.com/username/username.github.io.git&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;  branch: master&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/p&gt;
 &lt;h3 id=&quot;安装hexo-deployer-git包&quot;&gt;&lt;a href=&quot;#安装hexo-deployer-git包&quot; class=&quot;headerlink&quot; title=&quot;安装hexo-deployer-git包&quot;&gt;&lt;/a&gt;安装hexo-deployer-git包&lt;/h3&gt;&lt;figure class=&quot;highlight bash&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;$ npm install hexo-deployer-git --save&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
 &lt;h3 id=&quot;添加ssh-key&quot;&gt;&lt;a href=&quot;#添加ssh-key&quot; class=&quot;headerlink&quot; title=&quot;添加ssh key&quot;&gt;&lt;/a&gt;添加ssh key&lt;/h3&gt;&lt;figure class=&quot;highlight bash&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;$ ssh-keygen -t rsa -b 4096 -C &lt;span class=&quot;string&quot;&gt;&quot;your_email@example.com&quot;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
 &lt;h3 id=&quot;部署&quot;&gt;&lt;a href=&quot;#部署&quot; class=&quot;headerlink&quot; title=&quot;部署&quot;&gt;&lt;/a&gt;部署&lt;/h3&gt;&lt;figure class=&quot;highlight bash&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;$ hexo clean&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;$ hexo generate&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;$ hexo deploy&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;!-- 多说评论框 start --&gt;
+&lt;pre&gt;&lt;code&gt;&amp;lt;div class=&amp;quot;ds-thread&amp;quot; data-thread-key=&amp;quot;hexo&amp;quot; data-title=&amp;quot;Hexo部署到github流程&amp;quot; data-url=&amp;quot;http://yishuangxi.github.io/2016/05/08/hexo/&amp;quot;&amp;gt;&amp;lt;/div&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;!-- 多说评论框 end --&gt;
+&lt;!-- 多说公共JS代码 start (一个网页只需插入一次) --&gt;
+&lt;p&gt;&lt;script type=&quot;text/javascript&quot;&gt;&lt;br&gt;var duoshuoQuery = {short_name:”yishuangxi”};&lt;br&gt;    (function() {&lt;br&gt;        var ds = document.createElement(‘script’);&lt;br&gt;        ds.type = ‘text/javascript’;ds.async = true;&lt;br&gt;        ds.src = (document.location.protocol == ‘https:’ ? ‘https:’ : ‘http:’) + ‘//static.duoshuo.com/embed.js’;&lt;br&gt;        ds.charset = ‘UTF-8’;&lt;br&gt;        (document.getElementsByTagName(‘head’)[0]&lt;br&gt;         || document.getElementsByTagName(‘body’)[0]).appendChild(ds);&lt;br&gt;    })();&lt;br&gt;    &lt;/script&gt;&lt;br&gt;&lt;!-- 多说公共JS代码 end --&gt;&lt;/p&gt;
 </content>
     
     <summary type="html">
