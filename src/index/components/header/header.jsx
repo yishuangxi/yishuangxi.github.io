@@ -4,14 +4,17 @@
 
 import React from 'react'
 import style from './header.css'
+import CSSModules from 'react-css-modules'
 
-export default class Header extends React.Component{
-    render(){
+class Header extends React.Component {
+    render() {
         return (
-            <div className={style.header}>
-                <blockquote className={style.quote}>STAY HUNGRY, STAY FOOLISH </blockquote>
-                <h1 className={style.name}>MR.YISHUANGXI</h1>
+            <div styleName='header'>
+                <blockquote styleName='quote'>STAY HUNGRY, STAY FOOLISH</blockquote>
+                <h1 styleName='name'>MR.YISHUANGXI</h1>
             </div>
         );
     }
 }
+
+export default CSSModules(Header, style)
