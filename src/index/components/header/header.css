@@ -3,11 +3,11 @@ body{
   margin:0;padding: 0;
 }
 
-.fs_42{
+.fs-42{
   font-size: 42px;
 }
 
-.fs_14{
+.fs-14{
   font-size: 14px;
 }
 
@@ -16,12 +16,12 @@ body{
   text-align: center;
 }
 
-.quote{
-  composes: fs_14;
+.header-quote{
+  composes: fs-14;
   color: rgba(0, 0, 0, 0.5);
 }
 
-.name{
-  composes: fs_42;
+.header-name{
+  composes: fs-42;
   color: $color_title;
 }

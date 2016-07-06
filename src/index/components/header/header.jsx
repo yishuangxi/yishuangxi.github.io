@@ -8,10 +8,10 @@ import CSSModules from 'react-css-modules'
 
 class Header extends React.Component {
     render() {
-        return (
+        return ( 
             <div styleName='header'>
-                <blockquote styleName='quote'>STAY HUNGRY, STAY FOOLISH</blockquote>
-                <h1 styleName='name'>MR.YISHUANGXI</h1>
+                <blockquote styleName='header-quote'>STAY HUNGRY, STAY FOOLISH</blockquote>
+                <h1 styleName='header-name'>MR.YISHUANGXI</h1>
             </div>
         );
     }
