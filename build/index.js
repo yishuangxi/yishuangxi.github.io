@@ -21039,7 +21039,16 @@ webpackJsonp([0,1],[
 	            return _react2.default.createElement(
 	                'div',
 	                null,
-	                'this is header'
+	                _react2.default.createElement(
+	                    'p',
+	                    null,
+	                    'STAY HUNGRY, STAY FOOLISH '
+	                ),
+	                _react2.default.createElement(
+	                    'h1',
+	                    null,
+	                    'MR.YISHUANGXI'
+	                )
 	            );
 	        }
 	    }]);

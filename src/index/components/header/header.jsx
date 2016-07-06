@@ -8,7 +8,8 @@ export default class Header extends React.Component{
     render(){
         return (
             <div>
-                this is header
+                <p>STAY HUNGRY, STAY FOOLISH </p>
+                <h1>MR.YISHUANGXI</h1>
             </div>
         );
     }
