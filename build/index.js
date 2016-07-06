@@ -21014,6 +21014,10 @@ webpackJsonp([0,1],[
 	
 	var _react2 = _interopRequireDefault(_react);
 	
+	var _header = __webpack_require__(172);
+	
+	var _header2 = _interopRequireDefault(_header);
+	
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 	
 	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -21040,14 +21044,18 @@ webpackJsonp([0,1],[
 	                'div',
 	                null,
 	                _react2.default.createElement(
-	                    'p',
-	                    null,
-	                    'STAY HUNGRY, STAY FOOLISH '
-	                ),
-	                _react2.default.createElement(
-	                    'h1',
-	                    null,
-	                    'MR.YISHUANGXI'
+	                    'div',
+	                    { className: _header2.default.header },
+	                    _react2.default.createElement(
+	                        'p',
+	                        null,
+	                        'STAY HUNGRY, STAY FOOLISH '
+	                    ),
+	                    _react2.default.createElement(
+	                        'h1',
+	                        null,
+	                        'MR.YISHUANGXI'
+	                    )
 	                )
 	            );
 	        }
@@ -21057,6 +21065,13 @@ webpackJsonp([0,1],[
 	}(_react2.default.Component);
 	
 	exports.default = Header;
+
+/***/ },
+/* 172 */
+/***/ function(module, exports) {
+
+	// removed by extract-text-webpack-plugin
+	module.exports = {"header":"header__header-47n3b"};
 
 /***/ }
 ]);

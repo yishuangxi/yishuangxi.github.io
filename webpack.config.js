@@ -21,14 +21,17 @@ module.exports = {
     },
     module: {
         preLoaders: [
-            {
-                test: /\.jsx?$/, // include .js files
-                exclude: /node_modules/, // exclude any and all files in the node_modules folder
-                loader: "jshint-loader"
-            }
+            // {
+            //     test: /\.jsx?$/, // include .js files
+            //     exclude: /node_modules/, // exclude any and all files in the node_modules folder
+            //     loader: "jshint-loader"
+            // }
         ],
         loaders: [
-            {test: /\.css$/, loader: ExtractTextPlugin.extract("style-loader", "css-loader!postcss-loader")},
+            {
+                test: /\.css$/, 
+                loader: ExtractTextPlugin.extract("style-loader", "css-loader?modules&localIdentName=[name]__[local]-[hash:base64:5]!postcss-loader")
+            },
             {
                 test: /\.jsx?$/,
                 exclude: /node_modules/,
