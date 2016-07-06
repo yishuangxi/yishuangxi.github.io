@@ -29,15 +29,14 @@ module.exports = {
         ],
         loaders: [
             {
-                test: /\.css$/, 
-                loader: ExtractTextPlugin.extract("style-loader", "css-loader?modules&localIdentName=[name]__[local]-[hash:base64:5]!postcss-loader")
+                test: /\.css$/,
+                loader: ExtractTextPlugin.extract("style-loader", "css-loader?modules&localIdentName=[path][name]__[local]-[hash:base64:5]!postcss-loader")
             },
             {
                 test: /\.jsx?$/,
                 exclude: /node_modules/,
                 loaders: ['babel?presets[]=react,presets[]=es2015']
             }
-
         ]
     },
     resolve: {
