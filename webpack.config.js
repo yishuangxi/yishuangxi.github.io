@@ -50,7 +50,7 @@ module.exports = {
         new ExtractTextPlugin("[name].css")
     ],
     postcss: function () {
-        return [autoprefixer];
+        return [precss, autoprefixer];
     },
     // more options in the optional jshint object
     jshint: {

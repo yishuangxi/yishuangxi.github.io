@@ -1,26 +1,27 @@
+@import "./vars.css";
 body{
   margin:0;padding: 0;
 }
-.fs42{
+
+.fs_42{
   font-size: 42px;
 }
-.fs14{
+
+.fs_14{
   font-size: 14px;
-}
-.fwb{
-  font-weight: bold;
 }
 
 .header{
   width: 100%;
   text-align: center;
 }
+
 .quote{
-  composes: fs14;
+  composes: fs_14;
   color: rgba(0, 0, 0, 0.5);
 }
+
 .name{
-  composes: fs42;
-  composes: fwb;
-  color: #BA1820;
+  composes: fs_42;
+  color: $color_title;
 }
