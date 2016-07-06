@@ -8,11 +8,9 @@ import style from './header.css'
 export default class Header extends React.Component{
     render(){
         return (
-            <div>
-                <div className={style.header}>
-                    <p>STAY HUNGRY, STAY FOOLISH </p>
-                    <h1>MR.YISHUANGXI</h1>
-                </div>
+            <div className={style.header}>
+                <blockquote className={style.quote}>STAY HUNGRY, STAY FOOLISH </blockquote>
+                <h1 className={style.name}>MR.YISHUANGXI</h1>
             </div>
         );
     }
