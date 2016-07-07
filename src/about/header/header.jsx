@@ -5,13 +5,14 @@
 import React from 'react'
 import style from './header.css'
 import CSSModules from 'react-css-modules'
+import 'normalize.css'
 
 class Header extends React.Component {
     render() {
         return ( 
             <div styleName='header'>
-                <blockquote styleName='header-quote'>STAY HUNGRY, STAY FOOLISH</blockquote>
-                <h1 styleName='header-name'>MR.YISHUANGXI</h1>
+                <blockquote styleName='quote'>STAY HUNGRY, STAY FOOLISH</blockquote>
+                <h1 styleName='name'>MR.YISHUANGXI</h1>
             </div>
         );
     }

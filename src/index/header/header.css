@@ -1,8 +1,3 @@
-@import "./vars.css";
-body{
-  margin:0;padding: 0;
-}
-
 .fs-42{
   font-size: 42px;
 }
@@ -16,12 +11,13 @@ body{
   text-align: center;
 }
 
-.header-quote{
+.quote{
   composes: fs-14;
   color: rgba(0, 0, 0, 0.5);
 }
 
-.header-name{
+.name{
   composes: fs-42;
-  color: $color_title;
+  color: #BA1820;
+  margin-top: 0px;
 }

@@ -1,0 +1,26 @@
+body{
+  margin:0;padding: 0;
+}
+
+.fs-42{
+  font-size: 42px;
+}
+
+.fs-14{
+  font-size: 14px;
+}
+
+.header{
+  width: 100%;
+  text-align: center;
+}
+
+.quote{
+  composes: fs-14;
+  color: rgba(0, 0, 0, 0.5);
+}
+
+.name{
+  composes: fs-42;
+  color: #BA1820;;
+}
