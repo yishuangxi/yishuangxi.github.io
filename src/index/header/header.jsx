@@ -3,8 +3,9 @@
  */
 
 import React from 'react'
-import style from './header.css'
 import CSSModules from 'react-css-modules'
+
+import style from './Header.css'
 import 'normalize.css'
 
 class Header extends React.Component {
