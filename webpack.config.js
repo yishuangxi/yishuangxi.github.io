@@ -16,7 +16,7 @@ module.exports = {
     },
     output: {
         path: path.resolve(__dirname, 'build'),
-        filename: '[name].[chunkhash].js'
+        filename: '[name].[chunkhash:8].js'
     },
     resolve: {
         extensions: ['', '.js', '.jsx'],
@@ -49,8 +49,8 @@ module.exports = {
     },
     plugins: [
         new WebpackMd5Hash(),
-        new webpack.optimize.CommonsChunkPlugin("common", "common.[chunkhash].js"),
-        new ExtractTextPlugin("[name].[contenthash].css")
+        new webpack.optimize.CommonsChunkPlugin("common", "common.[chunkhash:8].js"),
+        new ExtractTextPlugin("[name].[contenthash:8].css")
     ],
     postcss: function () {
         return [precss, autoprefixer];
