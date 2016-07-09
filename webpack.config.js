@@ -4,18 +4,19 @@
 var path = require('path');
 var webpack = require('webpack');
 var ExtractTextPlugin = require("extract-text-webpack-plugin");
+var WebpackMd5Hash = require('webpack-md5-hash');
 var autoprefixer = require('autoprefixer');
 var precss = require('precss');
 
 module.exports = {
-    devtool: 'source-map',
+    // devtool: 'source-map',
     entry: {
         'index': 'src/index/index.jsx',
         'about': 'src/about/index.jsx'
     },
     output: {
         path: path.resolve(__dirname, 'build'),
-        filename: '[name].js'
+        filename: '[name].[chunkhash].js'
     },
     resolve: {
         extensions: ['', '.js', '.jsx'],
@@ -47,8 +48,9 @@ module.exports = {
         }
     },
     plugins: [
-        new webpack.optimize.CommonsChunkPlugin("common", "common.js"),
-        new ExtractTextPlugin("[name].css")
+        new WebpackMd5Hash(),
+        new webpack.optimize.CommonsChunkPlugin("common", "common.[chunkhash].js"),
+        new ExtractTextPlugin("[name].[contenthash].css")
     ],
     postcss: function () {
         return [precss, autoprefixer];
