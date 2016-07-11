@@ -5,6 +5,7 @@ var path = require('path');
 var webpack = require('webpack');
 var ExtractTextPlugin = require("extract-text-webpack-plugin");
 var WebpackMd5Hash = require('webpack-md5-hash');
+var HtmlWebpackPlugin = require('html-webpack-plugin')
 var autoprefixer = require('autoprefixer');
 var precss = require('precss');
 
@@ -48,6 +49,12 @@ module.exports = {
         }
     },
     plugins: [
+        new HtmlWebpackPlugin({
+            title: 'index page title',
+            filename: 'index.html',
+            template: './src/index/index.html',
+            chunks:['index', 'common']
+        }),
         new WebpackMd5Hash(),
         new webpack.optimize.CommonsChunkPlugin("common", "common.[chunkhash:8].js"),
         new ExtractTextPlugin("[name].[contenthash:8].css")
